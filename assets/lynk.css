@@ -1,7 +1,6 @@
 body {
   background-color: #EFFCFB;
   font-size: 30px;
-
 }
 
 .main-container {
@@ -9,4 +8,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+  margin: 20px 0;
 }
