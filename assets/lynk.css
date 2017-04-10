@@ -59,3 +59,25 @@ h1 {
 h1 > div {
   margin: 0 10px;
 }
+
+.lyft-phone {
+  float: left;
+  position: relative;
+}
+
+.lyft-gif {
+  position: absolute;
+  top: 110px;
+  left: 58px;
+}
+
+.uber-phone {
+  float: left;
+  position: relative;
+}
+
+.uber-gif {
+  position: absolute;
+  top: 110px;
+  left: 58px;
+}
