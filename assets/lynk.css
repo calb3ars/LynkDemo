@@ -1,8 +1,41 @@
-body {
-  /*background-color: #EFFCFB;*/
-  background-color: #A7D1CC;
-  font-size: 36px;
-  font-family: 'Nunito', sans-serif;
+.demo-background {
+  background: linear-gradient(180deg, #4786a2, #5098b7, #4786a2, #a7d1cc);
+  background-size: 800% 800%;
+  -webkit-animation: Lynk 0s ease infinite;
+  -moz-animation: Lynk 0s ease infinite;
+  -o-animation: Lynk 0s ease infinite;
+  animation: Lynk 0s ease infinite;
+  @-webkit-keyframes Lynk {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+  }
+  @-moz-keyframes Lynk {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+  }
+  @-o-keyframes Lynk {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+  }
+  @keyframes Lynk {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  color: #E5E5E5;
+  text-shadow: 2px 2px #5098b7;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  line-height: 0.9;
+  padding-top: 30px;
 }
 
 .main-container {
@@ -10,6 +43,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-size: 24px;
+  vertical-align: bottom;
 }
 
 .info-container {
@@ -19,6 +54,13 @@ body {
   flex-direction: column;
   font-size: 20px;
   margin: 5% 10%;
+  text-transform: uppercase;
+  color: #E5E5E5;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  line-height: 2;
+  text-shadow: 2px 2px #5098b7;
 }
 
 ul {
@@ -29,6 +71,12 @@ ul {
 .list-feature li {
   margin: 10px 0;
   font-size: 17px;
+  text-transform: uppercase;
+  color: #E5E5E5;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  line-height: 0.9;
 }
 
 footer {
@@ -40,9 +88,15 @@ a {
   font-size: 25px;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
-  font-weight: bold;
+  color: #E5E5E5;
+  /*font-weight: bold;*/
   margin: 40px 0;
+  text-shadow: 1px 1px #5098b7;
+}
+
+a:hover {
+  color: #0B4F6C;
+  text-shadow: 2px 2px #5098b7;
 }
 
 .link-logo {
