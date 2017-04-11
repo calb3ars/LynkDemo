@@ -1,43 +1,189 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Lynk</title>
-    <link rel="stylesheet" href="assets/lynk.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-  </head>
-  <body class="demo-background">
-    <div class="main-container">
-      <h1>
-        <div class="title">Compare ride fares with </div>
-        <div><img class="link-logo" src="assets/Lynk_demo_page.png"/></div>
-      </h1>
-      <div class="lyft-phone">
-        <img src="assets/iPhone7_Transparent.png">
-        <img class="lyft-gif" src="http://res.cloudinary.com/beebeean09/image/upload/v1491790837/Lynk_Lyft_Final_fwkhxc.gif" >
-      </div>
-      <div class="uber-phone">
-        <img src="assets/iPhone7_Transparent.png">
-        <img class="uber-gif" src="http://res.cloudinary.com/beebeean09/image/upload/v1491790626/Lynk_Uber_Final_emmhob.gif" >
-      </div>
+	<head>
+		<title>Lynk</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 
-      <div class="info-container">
-        <ul>Lynk is a mobile app built using React Native for the Apple iOS platform.</ul>
-        <ul>For the price conscious, comparing transportation costs between Lyft and Uber requires you to open both apps to check. This app will allow users to do a price comparison from within one single app.</ul>
-        <ul>Explore the different features listed below:</ul>
-        <div class="list-feature">
-          <li>Ability to input either an address or place name</li>
-          <li>Places a marker at the pickup location and destination once there is an input</li>
-          <li>Ability to select the number of passengers</li>
-          <li>Filter ride costs by price and ride time</li>
-          <li>Ability to select a ride and redirect to associated app with pre-populated data</li>
-          <li>Centers map view on user's current location</li>
-          <li>Pick up location defaults to user's current location</li>
-        </div>
-        <a href="https://github.com/calb3ars/Lynk">Github</a>
-      </div>
-    </div>
-  </body>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/lynk_logo_white.svg" alt="" /></span>
+						<p>Compare and book Uber and Lyft fares in a single app</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#about" class="active">About</a></li>
+							<li><a href="#features">Features</a></li>
+							<li><a href="#technologies">Technologies</a></li>
+							<li><a href="#developers">Developers</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="about" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>The Farest of them All</h2>
+										</header>
+										<p class="about-text">Lynk allows users to compare fares and book the cheapest ride to their destination within a single app. Try our the app in our demo.</p>
+										<ul class="actions">
+											<!-- <li><a href="#about" class="button">Download from the App Store</a></li> -->
+										</ul>
+									</div>
+									<!-- <span class="image"><img src="images/pic01.jpg" alt="" /></span> -->
+									<iframe src="https://appetize.io/embed/u2cprrqf369b0u1af8d8ayvmm8?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3" height="800px" width="400px"></iframe>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="features" class="main special">
+								<header class="major">
+									<h2>Features</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon major style1 fa-code"></span>
+										<h3>Real-time Uber and Lyft Prices</h3>
+										<p>Lynk uses the Uber and Lyft APIs to provide real-time fare estimates based on your pickup location and destination</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Uber vs. Lyft</h3>
+										<p>Ride types are compared side-by-side so you can easily compare and choose your ride based on your needs (price, time, # passengers)</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-diamond"></span>
+										<h3>Book your Fare</h3>
+										<p>Once you've decided on a fare, Lynk helps you pre-populate the pickup and destination information in the respective Uber or Lyft app so you can quickly book and get going!</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions">
+										<!-- <li><a href="#features" class="button">Learn More</a></li> -->
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Second Section -->
+							<section id="technologies" class="main special">
+								<header class="major">
+									<h2>Technologies</h2>
+									<p>The following languages and APIs were used in the making of Lynk</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="tech-icon"><i  class="devicon-react-original" height="100px"></i></span>
+										<strong>React Native</strong>
+									</li>
+									<li class="style2">
+										<span><img class="google-maps-icon" src="images/GoogleMaps.svg"></span>
+										<strong>Google Maps</strong>
+									</li>
+									<li class="style3">
+										<span><img class="google-geocoding-icon" src="images/geocoding.svg"></span>
+										<strong>Geocoding</strong>
+									</li>
+									<li class="style4">
+										<span><img class="uber-icon" src="images/uber.svg"></span>
+										<strong>Uber API</strong>
+									</li>
+									<li class="style5">
+										<span><img class="lyft-icon" src="images/lyft.svg"></span>
+										<strong>Lyft API</strong>
+									</li>
+								</ul>
+								<p class="content">React Native was used as the foundation for creating Lynk on the Apple iOS platform. Google Maps API was used to find user current location and destination addresses. The results were rendered using React Native Maps. For our API calls to Uber and Lyft's APIs, the Google Maps locations were translated into longitude and latitude coordinates using the React Native Geocoding API. Fare estimates and links to the Uber and Lyft applications used the Uber and Lyft APIs, respectively.</p>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="developers" class="main special">
+								<header class="major">
+									<h2>Developers</h2>
+									<ul class="icons">
+										<li><a href="https://github.com/calb3ars/" class="icon fa-github alt"><span class="label"></span></a><br/>Andrew Jiang</li>
+										<li><a href="https://github.com/tonyx28" class="icon fa-github alt"><span class="label"></span></a><br/>Tony Xie</li>
+										<li><a href="https://github.com/viz-eight7six" class="icon fa-github alt"><span class="label"></span></a><br/>Vinson Chen</li>
+										<li><a href="https://github.com/beebeean09" class="icon fa-github alt"><span class="label"></span></a><br/>Vivian Lee</li>
+									</ul>
+								</header>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="#" class="button special">Work with us!</a></li>
+										<li><a href="#" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Lynk</h2>
+							<p>Lynk's mission is to allow users to find and book the best ride for their needs.  </p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Contact Us</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>160 Spear Street &bull; San Francisco, CA 94105 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(415) 727-6876</dd>
+								<dd>(669) 241-0595</dd>
+								<dt>Email</dt>
+								<dd><a href="#">team@lynk.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Lynk. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
