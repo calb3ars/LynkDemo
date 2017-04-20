@@ -18,6 +18,17 @@
 		vertical-align: baseline;
 	}
 
+	.lyft-phone {
+   float: left;
+   position: relative;
+ }
+
+ .lyft-gif {
+   position: absolute;
+   top: 110px;
+   left: 58px;
+ }
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -2853,6 +2864,80 @@
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
+/* Demo */
+
+	#demo {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		width: calc(100% + 2em);
+		margin: 0 0 3em -2em;
+		padding: 0;
+		list-style: none;
+		flex-direction: column;
+	}
+	#demo div {
+		max-width: 564px;
+		justify-content: right;
+		display: flex;
+		align-self: center;
+		padding-left: 120px;
+	}
+
+		#demo li {
+			width: calc(33.33333% - 2em);
+			margin-left: 2em;
+			margin-top: 3em;
+			padding: 0;
+		}
+
+			#demo li:nth-child(1), #demo li:nth-child(2), #demo li:nth-child(3) {
+				margin-top: 0;
+			}
+
+			#demo li > :last-child {
+				margin-bottom: 0;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			#demo li {
+				width: calc(50% - 2em);
+			}
+
+				#demo li:nth-child(3) {
+					margin-top: 3em;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#demo {
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+
+				#demo li {
+					width: 100%;
+					margin-left: 0;
+					margin-top: 2em;
+				}
+
+					#demo li:nth-child(2), #demo li:nth-child(3) {
+						margin-top: 2em;
+					}
+
+		}
 /* Features */
 
 	.features {
@@ -3048,6 +3133,7 @@
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
+			margin-top: -400px;
 		}
 
 			.spotlight .content > :last-child {
@@ -3143,7 +3229,7 @@
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 2em 5em 1em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3188,7 +3274,7 @@
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 2em 4em 1em 4em ;
 				}
 
 		}
@@ -3633,7 +3719,7 @@
 		}
 
 		#main > .main {
-			padding: 5em 5em 3em 5em ;
+			padding: 2em 5em 3em 5em ;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3660,7 +3746,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#main > .main {
-				padding: 4em 4em 2em 4em ;
+				padding: 1em 4em 2em 4em ;
 			}
 
 				#main > .main > .image.main:first-child {
