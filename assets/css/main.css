@@ -29,6 +29,9 @@
    left: 58px;
  }
 
+ .app-store-button {
+	 border: none;
+ }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -2879,18 +2882,24 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		width: calc(100%);
+		margin: 0 0 3em 0;
 		padding: 0;
 		list-style: none;
 		flex-direction: column;
+		align-items: center
 	}
+
+	.demo-container {
+		margin-left: 126px;
+	}
+
 	#demo div {
-		max-width: 564px;
-		justify-content: right;
+		max-width: 526px;
+		min-width: 526px;
+		/*justify-content: right;
 		display: flex;
-		align-self: center;
-		padding-left: 120px;
+		align-self: right;*/
 	}
 
 		#demo li {
@@ -3133,7 +3142,7 @@
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
-			margin-top: -400px;
+			margin-top: -350px;
 		}
 
 			.spotlight .content > :last-child {
