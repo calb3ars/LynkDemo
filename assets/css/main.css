@@ -2712,7 +2712,7 @@
 	}
 
 	header.major {
-		margin-bottom: 3em;
+		/*margin-bottom: 3em;*/
 	}
 
 		header.major h2 {
@@ -2898,7 +2898,7 @@
 
 	.demo-box {
 		width: 526px;
-		height: 807px;
+		height: 600px;
 	}
 
 	#demo div {
