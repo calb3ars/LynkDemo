@@ -2891,15 +2891,19 @@
 	}
 
 	.demo-container {
-		margin-left: 126px;
+		margin-left: 108px;
+		overflow: hidden;
+
+	}
+
+	.demo-box {
+		width: 526px;
+		height: 807px;
 	}
 
 	#demo div {
 		max-width: 526px;
 		min-width: 526px;
-		/*justify-content: right;
-		display: flex;
-		align-self: right;*/
 	}
 
 		#demo li {
