@@ -19,14 +19,16 @@
 	}
 
 	.lyft-phone {
-   float: left;
-   position: relative;
+		float: left;
+		position: relative;
  }
 
  .lyft-gif {
-   position: absolute;
-   top: 110px;
-   left: 58px;
+	  position: absolute;
+	  top: 110px;
+	  left: 58px;
+		height: 498px;
+		width: 282px;
  }
 
  .app-store-button {
